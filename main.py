@@ -12,6 +12,7 @@ data types are used and behave within a program.
 
 from stack import Stack
 from queue import Queue
+from graph import Graph
 
 ITEMS_TO_USE = [1, 2, 3]
 
@@ -44,11 +45,25 @@ def use_queue():
     print(q)
 
 
+def use_graph():
+    """Procedure demonstrating how a graph works"""
+    g = Graph()
+    print(f"Creating graph over {ITEMS_TO_USE} on relation <")
+
+    for i in range(len(ITEMS_TO_USE)):
+        for j in range(len(ITEMS_TO_USE)):
+            if ITEMS_TO_USE[i] < ITEMS_TO_USE[j]:
+                g[ITEMS_TO_USE[i]] = ITEMS_TO_USE[j]
+
+    print(g)
+
+
 # MAIN PROGRAM
 if __name__ == '__main__':
     # UNCOMMENT PROCEDURE TO RUN IT:
-    use_stack()
+    # use_stack()
     # use_queue()
     # use_hash_table()
     # use_graph()
     # use_tree()
+    input()
