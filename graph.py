@@ -29,13 +29,13 @@ class Graph(object):
         """
         # Add key -> value mapping to graph
         if key in self.nodes.keys():
-            self.nodes[key].add(value)
+            self.nodes[key].append(value)
         else:
-            self.nodes[key] = {value}
+            self.nodes[key] = [value]
 
         # Ensure value exists as a node
         if value not in self.nodes.keys():
-            self.nodes[value] = set()
+            self.nodes[value] = []
 
     def __getitem__(self, key):
         """
