@@ -15,6 +15,7 @@ from graph import Graph
 from queue import Queue
 from stack import Stack
 
+
 def bfs(graph, startVertex):
     """Performs a breadth first search from a given start vertex
 
