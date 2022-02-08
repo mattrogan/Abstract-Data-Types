@@ -15,11 +15,15 @@
 
 ## Algorithms included
 
-Pseudocode algorithms will be uploaded (and implemented where applicable as methods within classes) for the following:
+The following algorithms (for relevant data types) have been implemented so far:
 
 * Graph traversals
   * Breadth-first
   * Depth-first
+
+**A note on DFS**: it does work, but instead of choosing the next node alphabetically, it chooses the last. Nonetheless, it still performs the relevant algorithm!
+
+The following algorithms are still to be implemented:
 * Tree traversals
   * Pre-order
   * In-order
