@@ -3,8 +3,8 @@
 
 ## Data types covered
 
-* Stack (LIFO)
-* Queue (FILO)
+* Stack (LIFO/FILO)
+* Queue (FIFO)
 * Graph
 * Tree
 * Binary Tree
